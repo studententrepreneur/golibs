@@ -14,6 +14,7 @@ type Specific struct {
 	Type            []string   `firestore:"jobType" json:"jobType"`
 	Company         []string   `firestore:"company" json:"company"`
 	ExpirienceLevel []string   `firestore:"experience" json:"experience"`
+	CurrentJob      *Works     `firestore:"currentJob" json:"currentJob"`
 }
 
 type DreamJob struct {
