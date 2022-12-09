@@ -130,7 +130,3 @@ type Preference struct {
 	ImageHeader string          `json:"imageHeader"`
 	Specific    domain.Specific `json:"specific"`
 }
-
-type Milestones interface {
-	GetUserId() string
-}
