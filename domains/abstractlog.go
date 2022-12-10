@@ -3,10 +3,10 @@ package domain
 import "time"
 
 type AbstractLog struct {
-	CreatedBy        string    `firestore:"createdBy" json:"createdBy"`
-	CreatedDate      time.Time `firestore:"createdDate" json:"createdDate"`
-	LastModifiedBy   string    `firestore:"lastModifiedBy" json:"lastModifiedBy"`
-	LastModifiedDate time.Time `firestore:"lastModifiedDate" json:"lastModifiedDate"`
+	CreatedBy        string      `firestore:"createdBy" json:"createdBy"`
+	CreatedDate      interface{} `firestore:"createdDate" json:"createdDate"`
+	LastModifiedBy   string      `firestore:"lastModifiedBy" json:"lastModifiedBy"`
+	LastModifiedDate interface{} `firestore:"lastModifiedDate" json:"lastModifiedDate"`
 }
 
 func CreateLogs(createdBy string) AbstractLog {
