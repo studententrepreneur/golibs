@@ -4,6 +4,11 @@ import (
 	"time"
 )
 
+type Timeline interface {
+	getId() string
+	getUserId() string
+}
+
 type Works struct {
 	Id                string      `firestore:"id" json:"id"`
 	Logs              AbstractLog `firestore:"logs" json:"logs"`
@@ -19,6 +24,13 @@ type Works struct {
 	UserId            string      `firestore:"userId" json:"userId"`
 }
 
+func (t Works) getId() string {
+	return t.Id
+}
+func (t Works) getUserId() string {
+	return t.UserId
+}
+
 type Volunteers struct {
 	Id               string      `firestore:"id" json:"id"`
 	Logs             AbstractLog `firestore:"logs" json:"logs"`
@@ -31,6 +43,13 @@ type Volunteers struct {
 	Highlights       []string    `firestore:"highlights" json:"highlights"`
 	CurrentlyServing bool        `firestore:"currentlyServing" json:"currentlyServing,omitempty"`
 	UserId           string      `firestore:"userId" json:"userId"`
+}
+
+func (t Volunteers) getId() string {
+	return t.Id
+}
+func (t Volunteers) getUserId() string {
+	return t.UserId
 }
 
 type Educations struct {
@@ -49,6 +68,13 @@ type Educations struct {
 	Summary           string      `firestore:"summary" json:"summary"`
 }
 
+func (t Educations) getId() string {
+	return t.Id
+}
+func (t Educations) getUserId() string {
+	return t.UserId
+}
+
 type Awards struct {
 	Id      string      `firestore:"id" json:"id"`
 	Logs    AbstractLog `firestore:"logs" json:"logs"`
@@ -57,6 +83,13 @@ type Awards struct {
 	Awarder string      `firestore:"awarder" json:"awarder"`
 	Summary string      `firestore:"summary" json:"summary"`
 	UserId  string      `firestore:"userId" json:"userId"`
+}
+
+func (t Awards) getId() string {
+	return t.Id
+}
+func (t Awards) getUserId() string {
+	return t.UserId
 }
 
 type Publications struct {
@@ -70,6 +103,13 @@ type Publications struct {
 	UserId      string      `firestore:"userId" json:"userId"`
 }
 
+func (t Publications) getId() string {
+	return t.Id
+}
+func (t Publications) getUserId() string {
+	return t.UserId
+}
+
 type Skills struct {
 	Id       string      `firestore:"id" json:"id"`
 	Logs     AbstractLog `firestore:"logs" json:"logs"`
@@ -78,6 +118,13 @@ type Skills struct {
 	Value    int         `firestore:"value" json:"value"`
 	Keywords []string    `firestore:"keywords" json:"keywords"`
 	UserId   string      `firestore:"userId" json:"userId"`
+}
+
+func (t Skills) getId() string {
+	return t.Id
+}
+func (t Skills) getUserId() string {
+	return t.UserId
 }
 
 type Languages struct {
@@ -89,6 +136,13 @@ type Languages struct {
 	UserId   string      `firestore:"userId" json:"userId"`
 }
 
+func (t Languages) getId() string {
+	return t.Id
+}
+func (t Languages) getUserId() string {
+	return t.UserId
+}
+
 type Interests struct {
 	Id       string      `firestore:"id" json:"id"`
 	Logs     AbstractLog `firestore:"logs" json:"logs"`
@@ -98,12 +152,26 @@ type Interests struct {
 	UserId   string      `firestore:"userId" json:"userId"`
 }
 
+func (t Interests) getId() string {
+	return t.Id
+}
+func (t Interests) getUserId() string {
+	return t.UserId
+}
+
 type References struct {
 	Id        string      `firestore:"id" json:"id"`
 	Logs      AbstractLog `firestore:"logs" json:"logs"`
 	Name      string      `firestore:"name" json:"name"`
 	Reference string      `firestore:"reference" json:"reference"`
 	UserId    string      `firestore:"userId" json:"userId"`
+}
+
+func (t References) getId() string {
+	return t.Id
+}
+func (t References) getUserId() string {
+	return t.UserId
 }
 
 type Projects struct {
@@ -123,6 +191,13 @@ type Projects struct {
 	UserId      string      `firestore:"userId" json:"userId"`
 }
 
+func (t Projects) getId() string {
+	return t.Id
+}
+func (t Projects) getUserId() string {
+	return t.UserId
+}
+
 type Certificates struct {
 	Id     string      `firestore:"id" json:"id"`
 	Logs   AbstractLog `firestore:"logs" json:"logs"`
@@ -132,4 +207,11 @@ type Certificates struct {
 	URL    string      `firestore:"url" json:"url"`
 	UserId string      `firestore:"userId" json:"userId"`
 	Images string      `firestore:"image" json:"image"`
+}
+
+func (t Certificates) getId() string {
+	return t.Id
+}
+func (t Certificates) getUserId() string {
+	return t.UserId
 }
