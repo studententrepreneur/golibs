@@ -5,8 +5,8 @@ import (
 )
 
 type Timeline interface {
-	getId() string
-	getUserId() string
+	GetId() string
+	GetUserId() string
 }
 
 type Works struct {
@@ -24,10 +24,10 @@ type Works struct {
 	UserId            string      `firestore:"userId" json:"userId"`
 }
 
-func (t Works) getId() string {
+func (t Works) GetId() string {
 	return t.Id
 }
-func (t Works) getUserId() string {
+func (t Works) GetUserId() string {
 	return t.UserId
 }
 
@@ -45,10 +45,10 @@ type Volunteers struct {
 	UserId           string      `firestore:"userId" json:"userId"`
 }
 
-func (t Volunteers) getId() string {
+func (t Volunteers) GetId() string {
 	return t.Id
 }
-func (t Volunteers) getUserId() string {
+func (t Volunteers) GetUserId() string {
 	return t.UserId
 }
 
@@ -68,10 +68,10 @@ type Educations struct {
 	Summary           string      `firestore:"summary" json:"summary"`
 }
 
-func (t Educations) getId() string {
+func (t Educations) GetId() string {
 	return t.Id
 }
-func (t Educations) getUserId() string {
+func (t Educations) GetUserId() string {
 	return t.UserId
 }
 
@@ -85,10 +85,10 @@ type Awards struct {
 	UserId  string      `firestore:"userId" json:"userId"`
 }
 
-func (t Awards) getId() string {
+func (t Awards) GetId() string {
 	return t.Id
 }
-func (t Awards) getUserId() string {
+func (t Awards) GetUserId() string {
 	return t.UserId
 }
 
@@ -103,10 +103,10 @@ type Publications struct {
 	UserId      string      `firestore:"userId" json:"userId"`
 }
 
-func (t Publications) getId() string {
+func (t Publications) GetId() string {
 	return t.Id
 }
-func (t Publications) getUserId() string {
+func (t Publications) GetUserId() string {
 	return t.UserId
 }
 
@@ -120,10 +120,10 @@ type Skills struct {
 	UserId   string      `firestore:"userId" json:"userId"`
 }
 
-func (t Skills) getId() string {
+func (t Skills) GetId() string {
 	return t.Id
 }
-func (t Skills) getUserId() string {
+func (t Skills) GetUserId() string {
 	return t.UserId
 }
 
@@ -136,10 +136,10 @@ type Languages struct {
 	UserId   string      `firestore:"userId" json:"userId"`
 }
 
-func (t Languages) getId() string {
+func (t Languages) GetId() string {
 	return t.Id
 }
-func (t Languages) getUserId() string {
+func (t Languages) GetUserId() string {
 	return t.UserId
 }
 
@@ -152,10 +152,10 @@ type Interests struct {
 	UserId   string      `firestore:"userId" json:"userId"`
 }
 
-func (t Interests) getId() string {
+func (t Interests) GetId() string {
 	return t.Id
 }
-func (t Interests) getUserId() string {
+func (t Interests) GetUserId() string {
 	return t.UserId
 }
 
@@ -167,10 +167,10 @@ type References struct {
 	UserId    string      `firestore:"userId" json:"userId"`
 }
 
-func (t References) getId() string {
+func (t References) GetId() string {
 	return t.Id
 }
-func (t References) getUserId() string {
+func (t References) GetUserId() string {
 	return t.UserId
 }
 
@@ -191,10 +191,10 @@ type Projects struct {
 	UserId      string      `firestore:"userId" json:"userId"`
 }
 
-func (t Projects) getId() string {
+func (t Projects) GetId() string {
 	return t.Id
 }
-func (t Projects) getUserId() string {
+func (t Projects) GetUserId() string {
 	return t.UserId
 }
 
@@ -209,9 +209,9 @@ type Certificates struct {
 	Images string      `firestore:"image" json:"image"`
 }
 
-func (t Certificates) getId() string {
+func (t Certificates) GetId() string {
 	return t.Id
 }
-func (t Certificates) getUserId() string {
+func (t Certificates) GetUserId() string {
 	return t.UserId
 }
