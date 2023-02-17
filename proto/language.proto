@@ -1,0 +1,8 @@
+syntax = "proto3";
+option go_package = "github.com/studententrepreneur/golibs/proto";
+
+message LanguageMessage {
+    string fluency = 1;
+    string language = 2;
+    uint32 value = 3;
+}

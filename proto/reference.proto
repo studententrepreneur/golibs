@@ -1,0 +1,6 @@
+syntax = "proto3";
+option go_package = "github.com/studententrepreneur/golibs/proto";
+message ReferenceMessage {
+    string name = 1;
+    string reference = 2;
+}

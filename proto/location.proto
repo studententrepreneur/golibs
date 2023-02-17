@@ -1,0 +1,9 @@
+syntax = "proto3";
+option go_package = "github.com/studententrepreneur/golibs/proto";
+
+message LocationMessage {
+    string address = 1;
+    string countryCode = 2;
+    string postalCode = 3;
+    string region = 4;
+}

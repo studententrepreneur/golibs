@@ -32,7 +32,7 @@ func AccessSecretVersion(name string) ([]byte, error) {
 	return result.Payload.Data, nil
 }
 
-func RegisterContext(projectID string) {
+func RegisterContext(projectID string, ctx context.Context) {
 	ProjectID = projectID
-	Ctx = context.Background()
+	Ctx = ctx
 }

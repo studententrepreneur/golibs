@@ -1,0 +1,16 @@
+syntax = "proto3";
+option go_package = "github.com/studententrepreneur/golibs/proto";
+
+import "google/protobuf/timestamp.proto";
+import "location.proto";
+
+message WorkMessage {    
+    repeated string highlights = 1;
+    bool isCurrentPosition = 2;
+    LocationMessage location = 3;
+    string name = 4;
+    string position = 5;
+    google.protobuf.Timestamp startDate = 6;
+    string summary = 7;
+    string website = 8;
+}

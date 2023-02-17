@@ -1,0 +1,16 @@
+syntax = "proto3";
+option go_package = "github.com/studententrepreneur/golibs/proto";
+
+import "google/protobuf/timestamp.proto";
+
+message EducationMessage {
+    string area = 1;
+    repeated string courses = 2;
+    bool currentlyPursuing = 3;
+    google.protobuf.Timestamp endDate = 4;
+    uint32 gpa = 5;
+    string institution = 6;
+    google.protobuf.Timestamp startDate = 7;
+    string studyType = 8;
+    string website = 9;
+}

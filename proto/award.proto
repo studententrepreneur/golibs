@@ -1,0 +1,18 @@
+syntax = "proto3";
+option go_package = "github.com/studententrepreneur/golibs/proto";
+
+message AwardMessage {
+    string awarder = 1;
+    string date = 2;
+    string summary = 3;
+    string title = 4;
+}
+
+
+service AwardService {
+  rpc create(AwardMessage) returns (AwardMessage);
+  rpc Primes(PrimeRequest) returns (stream PrimeResponse);
+  rpc Avg(stream AvgRequest) returns (AvgResponse);
+  rpc Max(stream MaxRequest) returns (stream MaxResponse);
+  rpc Sqrt(SqrtRequest) returns (SqrtResponse);
+}
