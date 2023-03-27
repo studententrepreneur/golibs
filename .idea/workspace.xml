@@ -4,13 +4,46 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c573e51-84e3-4177-b0e4-0759f578473b" name="Changes" comment="" />
+    <list default="true" id="4c573e51-84e3-4177-b0e4-0759f578473b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/utils/messages.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/award.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/award.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/certificate.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/certificate.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/education.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/education.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/interest.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/interest.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/language.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/language.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/location.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/location.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/login.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/login.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/project.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/project.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/publication.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/publication.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/reference.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/reference.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/skill.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/skill.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/volunteer.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/volunteer.proto" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/work.pb.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proto/work.proto" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="2LsIlc7oO0KemCDPIT1vzJLyoy8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,9 +59,48 @@
     "git-widget-placeholder": "master",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/saifali/git/hobby/apis/common"
+    "last_opened_file_path": "/Users/saif",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RunManager" selected="Go Test.go test golibs">
+    <configuration name="go build github.com/studententrepreneur/golibs" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="common" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/studententrepreneur/golibs" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build secrets.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="common" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <package value="github.com/studententrepreneur/golibs" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/utils/secrets.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go test golibs" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="common" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <package value="github.com/studententrepreneur/golibs" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.go test golibs" />
+        <item itemvalue="Go Build.go build github.com/studententrepreneur/golibs" />
+        <item itemvalue="Go Build.go build secrets.go" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />

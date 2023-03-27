@@ -1,8 +1,0 @@
-syntax = "proto3";
-option go_package = "github.com/studententrepreneur/golibs/proto";
-
-message InterestMessage {
-    string gifUrl = 1;
-    repeated string keywords = 2;
-    string name = 3;
-}

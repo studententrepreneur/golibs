@@ -1,8 +1,12 @@
 module github.com/studententrepreneur/golibs
 
-go 1.18
+go 1.20
 
-require cloud.google.com/go/secretmanager v1.5.0
+require (
+	cloud.google.com/go/secretmanager v1.5.0
+	google.golang.org/genproto v0.0.0-20220617124728-180714bec0ad
+	google.golang.org/protobuf v1.28.0
+)
 
 require (
 	cloud.google.com/go v0.102.0 // indirect
@@ -20,7 +24,5 @@ require (
 	golang.org/x/text v0.3.7 // indirect
 	google.golang.org/api v0.85.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
-	google.golang.org/genproto v0.0.0-20220617124728-180714bec0ad // indirect
 	google.golang.org/grpc v1.47.0 // indirect
-	google.golang.org/protobuf v1.28.0 // indirect
 )
